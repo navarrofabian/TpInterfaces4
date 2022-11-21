@@ -1,3 +1,59 @@
+//cambiar icono de menu hamburguesa
+let estado = 0;
+const cambiarIcon = () =>{
+
+  let burger = document.querySelector('.burger');
+  let linea1 = document.querySelector('.linea1');
+  let linea2 = document.querySelector('.linea2');
+  let linea3 = document.querySelector('.linea3');
+
+  burger.addEventListener('click', () =>{
+      linea1.classList.toggle('linea1-activa');
+      linea2.classList.toggle('linea2-activa');
+      linea3.classList.toggle('linea3-activa');
+      if(estado == 0){
+        mostrarMenu()
+        estado = 1;
+      }
+      else{
+        ocultarMenu();
+        estado = 0;
+      }
+
+      
+  });
+}
+
+cambiarIcon();
+
+function ocultarMenu(){
+    document.getElementById('menu').style.display = 'none';
+}
+
+function mostrarMenu(){
+    console.log("mostrar-menu")
+    document.getElementById('menu').style.display = '';
+}
+
+ocultarMenu();
+
+
+let header = document.getElementById('stickyHeader');
+
+window.onscroll = function() {
+  let y = window.scrollY;
+  let min = 20;
+  if(y > min) {
+    header.classList.add('sticky-header');
+    console.log(y);
+  }
+  else {
+    header.classList.remove('sticky-header');
+  }
+  
+};
+
+
 
 function temporizadorDeRetraso() {
   identificadorTiempoDeEspera = setTimeout(funcionConRetraso, 5000);
@@ -10,29 +66,6 @@ function funcionConRetraso() {
 }
 
 temporizadorDeRetraso()
-
-
-function ocultar(){
-    document.getElementById('menu').style.display = 'none';
-}
-
-
-
-function mostrarMenu(){
-    console.log("mostrar-menu")
-    document.getElementById('menu').style.display = '';
-}
-
-
-
-let btnMenu = document.getElementById('abrir-menu')
-btnMenu.addEventListener('click', mostrarMenu);
-
-
-let btnX = document.getElementById('cerrar-menu')
-btnX.addEventListener('click', ocultar);
-
-ocultar();
 
 
 const main_img = document.querySelector(".main_img");

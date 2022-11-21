@@ -95,12 +95,12 @@ header nav {
   color: white;
   align-items: center;
   justify-content: space-evenly;
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(22, 22, 22); 
 }
 
 header nav img {
-  max-width: 150px;
-  padding: 0% 5% 0% 5%;
+  max-width: 180px;
+  padding: 0% 7% 0% 7%;
 }
 
 nav ul {
@@ -117,6 +117,16 @@ nav ul li a:before {
 .stroke a:hover {
   color: rgb(148, 148, 148);
 }
+
+.sticky-header{
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+}
+
+.sticky-header .img-logo{
+  width: 80%;
+} 
 
 
 
@@ -224,7 +234,6 @@ nav.stroke ul li a:hover:after {
     position: fixed;
     width: 25%;
     z-index: 2;
-    top: 0;
     left: 0%;
     padding: 3% 0% 3% 3%;
     background-color: rgba(0, 0, 0, 0.76);
@@ -232,13 +241,94 @@ nav.stroke ul li a:hover:after {
     opacity: 1;
 }
 
+
+
+.container-icon-menu{
+  position: relative;
+}
+
+
+.burger div{
+  background-color: white;
+  height: 5px;
+  width: 35px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.linea1-activa{
+  position: relative;
+  top: 10px;
+  animation: top 0.3s ease-in both;
+}
+
+.linea2-activa{
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.linea3-activa{
+  position: relative;
+  bottom: 10px;
+  animation: bottom 0.3s ease-in both;
+}
+
+@keyframes top{
+  0%{
+      top: 0px;
+  }
+
+  33%{
+      top: 10px;
+  }
+
+  66%{
+      transform: rotate(0deg);
+  }
+
+  100%{
+      transform: rotate(45deg);
+  }
+}
+
+@keyframes bottom{
+  0%{
+      bottom: 0px;
+  }
+
+  33%{
+      bottom: 10px;
+  }
+
+  66%{
+      transform: rotate(0deg);
+  }
+
+  100%{
+      transform: rotate(-45deg);
+  }
+}
+
+/*---------- iconos animados menu --------*/
+
+
+
 .content-menu{
     color: #fff;
 }
-.content-menu li{
-    padding: 4% 5% 4% 6%;
-    color: #d4d4d4;
+
+.seccion-menu{}
+
+.item-menu{
+  position: relative;
+  padding: 5% 2%;
+  animation: traslateX calc(0.5s * var(--i)) ease-in;
 }
+
+@keyframes traslateX {
+  0%   {left: -500px;}
+  100% {left: 0px;}
+} 
 
 .menuHeader{
     display: flex;
