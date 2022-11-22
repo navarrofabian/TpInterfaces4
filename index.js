@@ -45,7 +45,7 @@ window.onscroll = function() {
   let min = 20;
   if(y > min) {
     header.classList.add('sticky-header');
-    console.log(y);
+
   }
   else {
     header.classList.remove('sticky-header');
@@ -109,4 +109,14 @@ carrusel.addEventListener("mouseout", () => {
 });
 
 start();
+
+
+
+let imagesJuego = ['img-gameplay1.jpg', 'img-gameplay2.png', 'img-gameplay2.jpg'];
+
+
+function mostrarImg(){
+
+}
+
 
