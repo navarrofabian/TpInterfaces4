@@ -321,8 +321,8 @@ nav.stroke ul li a:hover:after {
 
 .item-menu{
   position: relative;
-  padding: 5% 2%;
-  animation: traslateX calc(0.5s * var(--i)) ease-in;
+  padding: 2% 2%;
+  animation: traslateX calc(0.2s * var(--i)) ease-in;
 }
 
 @keyframes traslateX {
