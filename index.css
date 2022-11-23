@@ -866,27 +866,132 @@ footer a:hover{
 /*--------------------------paginaCommingSoon--------------------------------------------*/
 .parallax {
   width: 100%;
-  height: 70%;
-  background: var(--i);
-  background-size: cover;
-  display: flex;
+  height: 85%;
+  background: rgb(2,0,36);
+  background: linear-gradient(153deg, rgba(2,0,36,1) 0%, rgba(8,112,98,1) 45%, rgba(9,121,103,1) 53%, rgba(39,59,7,1) 100%);
+  background-position: 0%;
+  animation: parallax-animation 2s ease-in;
+  position: absolute;
 }
-
-.contFrente {
-  width: 150%;
-  padding: 0% 5% 0% 5%;
+.layer{
+ position: absolute;
+ opacity: 1;
 }
-.contFrente {
-  margin: -4px;
-}
-
-.frente {
+.layer2 img{
+  max-width: 55%;
+ } 
+ .layer3 img{
   max-width: 100%;
+ }
+.layer3{
+  top: 0px;
+  right: 0;
+  animation: moveLayer3 3s ease-out;
+} 
+
+@keyframes moveLayer3 {
+
+  0%{
+    right: -200px;
+  }
+
+  100%{
+    right: 0px;
+  }
+  
 }
+
+.layer2{
+  animation: moveLayer2 2s ease-out;
+}
+
+
+@keyframes moveLayer2 {
+
+  0%{
+    left: -50px;
+  }
+
+  100%{
+    left: 0px;
+  }
+  
+}
+
+
+
+
+
+.layer1{
+  top: 25vh;
+  z-index: 5;
+  animation: moveLayer1 2s ease-out;
+}
+@keyframes moveLayer1 {
+
+  0%{
+    top: 10vh;
+    opacity: 1;
+  }
+  30%{
+    opacity: 0;
+  }
+
+  80%{
+    opacity: 0;
+  }
+  100%{
+    top: 25vh;
+    opacity: 1;
+  }
+  
+}
+
+
+
+.layer4{
+  top: 50vh;
+  z-index: 5;
+  animation: moveLayer4 2.4s ease-out;
+}
+
+
+@keyframes moveLayer4 {
+
+  0%{
+    top: 65vh;
+    opacity: 1;
+  }
+  30%{
+    opacity: 0;
+  }
+
+  80%{
+    opacity: 0;
+  }
+  100%{
+    top: 50vh;
+    opacity: 1;
+  }
+  
+}
+
+
+.layer5{
+  top: 65vh;
+  left: 42%;
+}
+.layer5 h3{
+  color: white;
+  text-align: center;
+}
+
+
 
 .logo {
-  width: 70%;
-  padding-left: 15%;
+  width: 50%;
+  padding-left: 25%;
+  
 }
 
 .cont-logos {
@@ -894,11 +999,8 @@ footer a:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-right: 10%;
 }
-.cont-logos h3{
-    color: white;
-}
-
 
 .btn {
     box-sizing: border-box;
@@ -928,7 +1030,29 @@ footer a:hover{
     color: rgb(0, 0, 0);
     box-shadow: 0 0 80px 80px#00d7c3 inset, 0 0 0 0#00d7c3;
     transition: all 250ms ease-in-out;
+    animation: transitionHidden 4.5s ease-in;
+    opacity: 1;
   }
+
+  .lanzamiento{
+    opacity: 1;
+    animation: transitionHidden 4s ease-in;
+  }
+
+  @keyframes transitionHidden {
+    0%{
+      opacity: 0;
+    }
+    90%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+    
+  }
+
+
   .callToAction:hover {
     box-shadow: 0 0 15px 0 #00d7c3 inset, 0 0 10px 4px #00d7c3;
   }
@@ -939,7 +1063,7 @@ footer a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3% 7% 3% 7%;
+    margin: 50% 0% 3% 0%;
   
 }
 .cardFeature{
@@ -1014,7 +1138,7 @@ footer a:hover{
   width: 100%; 
   height: 500px;
   background-size: cover;
-  
+  border-radius: 8px;
   /* transform: rotate(360deg) translate(0px, 0); */
   transition: all 400ms ease-in-out;
   transition-delay: 0.6s;
@@ -1059,10 +1183,28 @@ footer a:hover{
 
 .titulo-seccion{
   color: white;
+  margin-left: 7%;
+  position: relative;
 }
 
-.titulo-seccion{
-  margin-left: 7%;
+.cards-pj.ocultarPjs{
+  display: none;
+}
+
+
+.pj-var{
+  position: relative;
+  animation: out-in-pj calc(0.8s * var(--i)) ease-out ;
+  right: 0px;
+}
+
+@keyframes out-in-pj {
+  0%{
+    right: -1200px;
+  }
+  100%{
+    right: 0px;
+  }
 }
 
 .cards-pj{

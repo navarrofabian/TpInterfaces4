@@ -39,18 +39,39 @@ ocultarMenu();
 
 
 let header = document.getElementById('stickyHeader');
+let tSec = document.getElementById('tSec');
+let cardsPj = document.getElementById('cardsPj');
+let posY;
+let oculto = true;
+let alto = cardsPj.offsetHeight
+
 
 window.onscroll = function() {
   let y = window.scrollY;
   let min = 20;
+  
   if(y > min) {
     header.classList.add('sticky-header');
 
   }
-  else {
+  else if(y < min) {
     header.classList.remove('sticky-header');
   }
-  
+
+if(y < tSec.offsetTop - alto){
+  cardsPj.classList.add('ocultarPjs');
+
+}
+else if(y > tSec.offsetTop - (alto)){
+  cardsPj.classList.remove('ocultarPjs');
+}
+
+/*
+ console.log('posy '+ y)
+ console.log('posHeader '+ header.offsetTop)
+ console.log('posCarr '+ tSec.offsetTop)
+ console.log('alto '+ alto)
+ */
 };
 
 
