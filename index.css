@@ -1185,6 +1185,7 @@ footer a:hover{
   color: white;
   margin-left: 7%;
   position: relative;
+  margin-bottom: 200px;
 }
 
 .cards-pj.ocultarPjs{
@@ -1248,43 +1249,52 @@ footer a:hover{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), var(--i);
     transition: 0.5s;
 }
-.cont-historia{
-  color: #fff;
-  margin: 7%;
-  border-radius: 10px;
-  border: 2px solid rgba(0, 116, 228, 1) ;
-  padding: 2%;
-  font-size: large;
-  line-height: 2;
-  background-color: #1b1b1b;
-}
 
-.cont-historia p{
-  padding: 2% 2% 2% 0%;
-}
-
-.cont-img-historia img{
-  max-width: 100%;
-  border-radius: 10px;
-  
-
-}
-
+/*----------------------seccion historia-------------------------------------------*/
 .historia{
   margin: 7%;
+  display: flex;
   color: #fff;
-  text-align: center;
+ 
   
 }
-.historia h1{
-  padding: 2%;
+
+.cont-text-historia{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+ margin-left: 15%;
 }
 
-.text-historia{
+.cont-img-historia{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.img-historia {
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  border-radius: 2%;
+  position: sticky;
+  transition: all 400ms ease-in-out;
+  top: 200px;
+  padding-left: 20%;
+  margin-left: 50%;
+}
+
+
+
+
+.text-historia {
   font-size: x-large;
-  padding: 0% 8% 5% 8%;
+  padding: 15% 25% 15% 20%;
   line-height: 2;
 }
+
+
+/*----------------------seccion historia-------------------------------------------*/
 
 /*--------------------------4enlinea--------------------------------------------*/
 

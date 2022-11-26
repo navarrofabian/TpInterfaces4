@@ -221,7 +221,7 @@
     <div id="tSec" class="titulo-seccion">
       <h1>Personajes de assassin's Creed Valhalla</h1>
     </div>
-    <section class="personajes">
+    <section id="secPjs" class="personajes">
       <div id="cardsPj" class="cards-pj">
         <div class="pj-var" style="--i: 1">
           <div class="card-pj" style="--i: url(../imagenes/pj1.webp)">
@@ -374,26 +374,38 @@
 
     <!----------------------historia del juego--------------------------------->
     <section class="historia">
-      <h1>Un poco de historia</h1>
+
       <div class="cont-img-historia">
-        <img src="/imagenes/assHistoria.jpg" alt="" />
+        <div id="imgHistory" class="img-historia"></div>
       </div>
-      <div class="text-historia">
-        <p>
-          En el año 873 d.c., la guerra y el hacinamiento llevaron a Eivor a
-          liderar a su clan de vikingos para que abandonaran Noruega. Se
-          instalan en la Inglaterra medieval como parte de la expansión vikinga
-          en toda Europa. Esto los pone en conflicto con los reinos anglosajones
-          de Wessex, Northumbria, Estanglia y Mercia. El clan de Eivor
-          enfrentará fuerzas lideradas por los líderes de estos reinos, incluido
-          Alfredo el Grande, el rey de Wessex. Es durante este tiempo que Eivor
-          se encuentra con los Ocultos y se une a su lucha contra la Orden de
-          los Antiguos. Las ciudades explorables incluyen Winchester, Londres y
-          York, así como partes de Noruega, América, Irlanda y Francia. Al igual
-          que con juegos anteriores de la serie, Valhalla presentará una
-          narrativa ambientada en el presente que sigue a Layla Hassan, un
-          personaje que aparece en Origins y Odyssey.
-        </p>
+      
+      <div class="cont-text-historia">
+        <div id="text1" class="text-historia">
+          <p>
+            En el año 873 d.c., la guerra y el hacinamiento llevaron a Eivor a
+            liderar a su clan de vikingos para que abandonaran Noruega. Se
+            instalan en la Inglaterra medieval como parte de la expansión vikinga
+            en toda Europa. 
+          </p>
+        </div>
+        <div id="text2"  class="text-historia">
+          <p>
+            Esto los pone en conflicto con los reinos anglosajones
+            de Wessex, Northumbria, Estanglia y Mercia. El clan de Eivor
+            enfrentará fuerzas lideradas por los líderes de estos reinos, incluido
+            Alfredo el Grande, el rey de Wessex. Es durante este tiempo que Eivor
+            se encuentra con los Ocultos y se une a su lucha contra la Orden de
+            los Antiguos.
+          </p></div>
+        <div id="text3" class="text-historia">
+          <p>
+            Las ciudades explorables incluyen Winchester, Londres y
+            York, así como partes de Noruega, América, Irlanda y Francia. Al igual
+            que con juegos anteriores de la serie, Valhalla presentará una
+            narrativa ambientada en el presente que sigue a Layla Hassan, un
+            personaje que aparece en Origins y Odyssey.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -502,5 +514,7 @@
     </footer>
     <script src="/index.js"></script>
     <script src="/carrousel.js"></script>
+    <script src="/animaciones/animacionScroll.js"></script>
+
   </body>
 </html>

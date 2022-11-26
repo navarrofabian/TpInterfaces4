@@ -38,43 +38,6 @@ function mostrarMenu(){
 ocultarMenu();
 
 
-let header = document.getElementById('stickyHeader');
-let tSec = document.getElementById('tSec');
-let cardsPj = document.getElementById('cardsPj');
-let posY;
-let oculto = true;
-let alto = cardsPj.offsetHeight
-
-
-window.onscroll = function() {
-  let y = window.scrollY;
-  let min = 20;
-  
-  if(y > min) {
-    header.classList.add('sticky-header');
-
-  }
-  else if(y < min) {
-    header.classList.remove('sticky-header');
-  }
-
-if(y < tSec.offsetTop - alto){
-  cardsPj.classList.add('ocultarPjs');
-
-}
-else if(y > tSec.offsetTop - (alto)){
-  cardsPj.classList.remove('ocultarPjs');
-}
-
-/*
- console.log('posy '+ y)
- console.log('posHeader '+ header.offsetTop)
- console.log('posCarr '+ tSec.offsetTop)
- console.log('alto '+ alto)
- */
-};
-
-
 
 function temporizadorDeRetraso() {
   identificadorTiempoDeEspera = setTimeout(funcionConRetraso, 5000);
@@ -130,14 +93,5 @@ carrusel.addEventListener("mouseout", () => {
 });
 
 start();
-
-
-
-let imagesJuego = ['img-gameplay1.jpg', 'img-gameplay2.png', 'img-gameplay2.jpg'];
-
-
-function mostrarImg(){
-
-}
 
 
