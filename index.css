@@ -1292,6 +1292,53 @@ footer a:hover{
   padding: 15% 25% 15% 20%;
   line-height: 2;
 }
+/*-----------------------------animacion spritesheet---------*/
+/*  Animación del personaje */
+#caballero {
+	/* Tamaño de la viñeta individual */
+opacity: 1;
+width: 206.25px;
+height: 213px;
+background: url(imagenes/2.png) center;
+animation: walk .6s steps(4) infinite;
+position:relative;
+  bottom:45px;
+
+}
+@keyframes walk {
+0% { background-position: 0px; }
+100% { background-position: -825px; }
+/*from {background-position-x: 0px;}
+      to {background-position-x: -1920px;}*/
+}
+
+
+
+
+
+/* Animación del cielo. Efecto "Parallax", va más lento que el mar. */
+#sky {
+  background: url(imagenes/cielo.png) repeat-X;
+  animation: movebg 9s linear infinite;
+}
+
+/* Animación del mar. */
+#sea {
+  background: url(imagenes/tierra2.png) repeat-x;
+  animation: movebg 3s linear infinite;
+  /* Posicionamos el mar, para que no solape al cielo */
+  position:relative;
+  top:155px;
+  /* Pequeño degradado interior para suavizar el mar. Puede consumir muchos recursos */
+  box-shadow:10px 10px 45px RGBA(0,0,0, 0.85) inset;
+}
+
+/* Animación para mover cielo y mar */
+@keyframes movebg {
+  0% { background-position:728px } 
+  100% { background-position:0 }
+}
+/*-----------------------------animacion spritesheet---------*/
 
 
 /*----------------------seccion historia-------------------------------------------*/
