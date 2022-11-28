@@ -50,15 +50,14 @@
           </figure>
         </div>
       </nav>
-
-      <div class="breadcrum">
-        <a href="/index.html"><h5>Home</h5></a>
-        <img src="/imagenes/chevron-right.svg" alt="" />
-        <h5>Proximamente</h5>
-        <img src="/imagenes/chevron-right.svg" alt="" />
-        <h5>Assasin's Creed Valhalla</h5>
-      </div>
     </header>
+    <div class="breadcrum">
+      <a href="/index.html"><h5>Home</h5></a>
+      <img src="/imagenes/chevron-right.svg" alt="" />
+      <h5>Proximamente</h5>
+      <img src="/imagenes/chevron-right.svg" alt="" />
+      <h5>Assasin's Creed Valhalla</h5>
+    </div>
 
     <!-----------------------header-------------------------------------------------->
     <!-----------------------menu-------------------------------------------------->
@@ -95,13 +94,13 @@
           </ul>
         </div>
         <div class="categorias-menu">
-          <h3 class="item-menu" style="--i:7">Categorias</h3>
+          <h3 class="item-menu" style="--i: 7">Categorias</h3>
           <ul>
-            <li class="item-menu" style="--i:8">Accion</li>
-            <li class="item-menu" style="--i:9">Aventura</li>
-            <li class="item-menu" style="--i:10">Clasicos</li>
-            <li class="item-menu" style="--i:11">Carreras</li>
-            <li class="item-menu" style="--i:12">Multijugador</li>
+            <li class="item-menu" style="--i: 8">Accion</li>
+            <li class="item-menu" style="--i: 9">Aventura</li>
+            <li class="item-menu" style="--i: 10">Clasicos</li>
+            <li class="item-menu" style="--i: 11">Carreras</li>
+            <li class="item-menu" style="--i: 12">Multijugador</li>
           </ul>
         </div>
       </div>
@@ -204,15 +203,17 @@
     <!----------------------features del juego-------------------------------------->
 
     <!----------------------imagenes del juego-------------------------------------->
-
-    <div id="imgsCont" class="car-imgs-juego">
-      <button id="retroceder">
-        <img src="/imagenes/chevron-left.svg" alt="" />
-      </button>
-      <div class="img-juego" id="imagen"></div>
-      <button id="avanzar">
-        <img src="/imagenes/chevron-right copy.svg" alt="" />
-      </button>
+    <div class="cont-imagenes-juego">
+      <h1>Imagenes del juego</h1>
+      <div id="imgsCont" class="car-imgs-juego">
+        <button id="retroceder">
+          <img src="/imagenes/chevron-left.svg" alt="" />
+        </button>
+        <div class="img-juego" id="imagen"></div>
+        <button id="avanzar">
+          <img src="/imagenes/chevron-right copy.svg" alt="" />
+        </button>
+      </div>
     </div>
 
     <!----------------------imagenes del juego-------------------------------------->
@@ -374,48 +375,47 @@
 
     <!----------------------historia del juego--------------------------------->
     <section class="historia">
-
       <div class="cont-img-historia">
         <div id="imgHistory" class="img-historia"></div>
       </div>
-      
+
       <div class="cont-text-historia">
         <div id="text1" class="text-historia">
           <p>
             En el año 873 d.c., la guerra y el hacinamiento llevaron a Eivor a
             liderar a su clan de vikingos para que abandonaran Noruega. Se
-            instalan en la Inglaterra medieval como parte de la expansión vikinga
-            en toda Europa. 
+            instalan en la Inglaterra medieval como parte de la expansión
+            vikinga en toda Europa.
           </p>
         </div>
-        <div id="text2"  class="text-historia">
+        <div id="text2" class="text-historia">
           <p>
-            Esto los pone en conflicto con los reinos anglosajones
-            de Wessex, Northumbria, Estanglia y Mercia. El clan de Eivor
-            enfrentará fuerzas lideradas por los líderes de estos reinos, incluido
-            Alfredo el Grande, el rey de Wessex. Es durante este tiempo que Eivor
-            se encuentra con los Ocultos y se une a su lucha contra la Orden de
-            los Antiguos.
-          </p></div>
+            Esto los pone en conflicto con los reinos anglosajones de Wessex,
+            Northumbria, Estanglia y Mercia. El clan de Eivor enfrentará fuerzas
+            lideradas por los líderes de estos reinos, incluido Alfredo el
+            Grande, el rey de Wessex. Es durante este tiempo que Eivor se
+            encuentra con los Ocultos y se une a su lucha contra la Orden de los
+            Antiguos.
+          </p>
+        </div>
         <div id="text3" class="text-historia">
           <p>
-            Las ciudades explorables incluyen Winchester, Londres y
-            York, así como partes de Noruega, América, Irlanda y Francia. Al igual
-            que con juegos anteriores de la serie, Valhalla presentará una
-            narrativa ambientada en el presente que sigue a Layla Hassan, un
-            personaje que aparece en Origins y Odyssey.
+            Las ciudades explorables incluyen Winchester, Londres y York, así
+            como partes de Noruega, América, Irlanda y Francia. Al igual que con
+            juegos anteriores de la serie, Valhalla presentará una narrativa
+            ambientada en el presente que sigue a Layla Hassan, un personaje que
+            aparece en Origins y Odyssey.
           </p>
         </div>
       </div>
     </section>
-     <!-----------------------animacion spritesheet-------------------------------------->
- <div id="sky">
-  <div id="sea">
-    <div id="caballero"></div>
-  </div>
-</div>
-<!-----------------------animacion spritesheet-------------------------------------->
-
+    <!-----------------------animacion spritesheet-------------------------------------->
+    <div id="sky">
+      <div id="sea">
+        <div id="caballero"></div>
+      </div>
+    </div>
+    <!-----------------------animacion spritesheet-------------------------------------->
     <footer>
       <div class="redes">
         <figure>
@@ -490,24 +490,34 @@
       <div class="secciones">
         <table>
           <tr>
-            <th>Links</th>
+            <th>Ayuda</th>
             <th>Empresa</th>
-            <th>Condiciones</th>
+            <th>Shop</th>
           </tr>
           <tr>
-            <td>Home</td>
-            <td>Prensa</td>
-            <td>Terminos de uso</td>
+            <td><a href="">FaQs</a></td>
+            <td><a href="">Contacto</a></td>
+            <td><a href="">Joysticks</a></td>
           </tr>
           <tr>
-            <td>Contacto</td>
-            <td>Inversores</td>
-            <td>Privacidad</td>
+            <td><a href="">Guías de usuario</a></td>
+            <td><a href="">Prensa</a></td>
+            <td><a href="">Auriculares</a></td>
           </tr>
           <tr>
-            <td>Ayuda</td>
-            <td>Oficinas</td>
-            <td>Configurar</td>
+            <td><a href="">Anuncios</a></td>
+            <td><a href="">Inversores</a></td>
+            <td><a href="">Sillas Gamer</a></td>
+          </tr>
+          <tr>
+            <td><a href="">Formas de pago</a></td>
+            <td><a href="">Quienes somos</a></td>
+            <td><a href="">Gorras GameZone®</a></td>
+          </tr>
+          <tr>
+            <td><a href="">Terminos de uso</a></td>
+            <td><a href="">Configurar</a></td>
+            <td><a href="">Tazas GameZone®</a></td>
           </tr>
         </table>
       </div>
@@ -522,6 +532,5 @@
     <script src="/index.js"></script>
     <script src="/carrousel.js"></script>
     <script src="/animaciones/animacionScroll.js"></script>
-
   </body>
 </html>

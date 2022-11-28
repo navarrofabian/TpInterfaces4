@@ -9,6 +9,7 @@
 }
 body {
   background-color: rgb(14, 14, 14);
+  overflow-x: hidden;
 
 }
 
@@ -233,12 +234,13 @@ nav.stroke ul li a:hover:after {
 .menu-hamburguesa{
     position: fixed;
     width: 25%;
-    z-index: 2;
+    z-index: 10;
     left: 0%;
     padding: 3% 0% 3% 3%;
     background-color: rgba(0, 0, 0, 0.76);
     height: 100vh;
     opacity: 1;
+    top: 30px;
 }
 
 
@@ -317,7 +319,7 @@ nav.stroke ul li a:hover:after {
     color: #fff;
 }
 
-.seccion-menu{}
+/* .seccion-menu{} */
 
 .item-menu{
   position: relative;
@@ -333,7 +335,7 @@ nav.stroke ul li a:hover:after {
 .menuHeader{
     display: flex;
     justify-content: space-between;
-    padding-right: 2%;
+    padding: 0% 0% 5% 0%;
 
 }
 
@@ -924,7 +926,7 @@ footer a:hover{
 
 .layer1{
   top: 25vh;
-  z-index: 5;
+  z-index: 1;
   animation: moveLayer1 2s ease-out;
 }
 @keyframes moveLayer1 {
@@ -951,7 +953,7 @@ footer a:hover{
 
 .layer4{
   top: 50vh;
-  z-index: 5;
+  z-index: 1;
   animation: moveLayer4 2.4s ease-out;
 }
 
@@ -1124,7 +1126,10 @@ footer a:hover{
   margin: 1% 7% 5% 7%;
 }
 
-
+.cont-imagenes-juego h1{
+  color: white;
+  text-align: center;
+}
 
 .car-imgs-juego{
   display: flex;
@@ -1195,7 +1200,7 @@ footer a:hover{
 
 .pj-var{
   position: relative;
-  animation: out-in-pj calc(0.8s * var(--i)) ease-out ;
+  animation: out-in-pj calc(0.8s * var(--i)) ease-in-out;
   right: 0px;
 }
 
@@ -1320,6 +1325,7 @@ position:relative;
 #sky {
   background: url(imagenes/cielo.png) repeat-X;
   animation: movebg 9s linear infinite;
+  margin-bottom: 150px;
 }
 
 /* Animación del mar. */

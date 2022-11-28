@@ -6,8 +6,7 @@ let alto = cardsPj.offsetHeight;
 let pos = 0;
 let imgCont = document.getElementById("imgHistory");
 let imgsHistory = ["/imagenes/img-historia1.png", "/imagenes/img-historia2.png","/imagenes/img-historia3.png"]
-
-
+let menu = document.getElementById("menu");
 imgCont.style.backgroundImage = `url(${imgsHistory[pos]})`;
 
 window.onscroll = function () {
@@ -22,8 +21,11 @@ window.onscroll = function () {
 
   if (y > min) {
     header.classList.add("sticky-header");
+    menu.style.top = "58px";
+
   } else if (y < min) {
     header.classList.remove("sticky-header");
+    menu.style.top = "95px";
   }
 
   if (y < tSec.offsetTop - alto) {
